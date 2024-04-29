@@ -3,7 +3,7 @@ template.innerHTML = `
 <link rel="stylesheet" href="component/numberAnimate/style.css">
 <div>
 <div class="card">
-    <img src="asset/img/icon/icons8-population-64.png" width="100px" alt="">
+    <img src="/QashqaiPage/asset/img/icon/icons8-population-64.png" width="100px" alt="">
     <h2>1,500,000</h2>
     <p>جمعیت ایل</p>
   </div>
