@@ -1,0 +1,60 @@
+@font-face {
+    font-family: FONT1;
+    src: url('../font/Tanha.woff');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: FONT1;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, rgba(240, 230, 140, 1) 0%, rgba(222, 162, 77, 1) 100%);
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    background-color: #f0e68c;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.row img{
+    transition: all ease 2s;
+}
+.row  img:hover{
+    border-radius: 30px;
+    border: 5px dashed wheat;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

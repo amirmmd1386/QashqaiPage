@@ -1,0 +1,206 @@
+@font-face {
+    font-family: font1;
+    src: url(../font/Tanha.woff);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-si {}
+
+    ing: border-box;
+}
+
+body {
+    background-color: #f0e68c;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 4rem;
+    margin: 0 0 0 30px;
+    color: black;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #f7d26f;
+}
+
+.timeline .timeline-container {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline .timeline-container .timeline-icon {
+    position: absolute;
+    left: -88px;
+    top: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    background: #f0e68c;
+}
+
+.timeline .timeline-container .timeline-icon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline .timeline-container .timeline-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.timeline .timeline-container .timeline-body {
+    background: #f7d26f;
+    border-radius: 3px;
+    padding: 20px 20px 15px;
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .timeline-container .timeline-body:before {
+    content: "";
+    background: inherit;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: -10px;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 2px;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title {
+    margin-bottom: 1.4rem;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title .badge {
+    background: #a16900;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timeline .timeline-container .timeline-body .timeline-subtitle {
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.4;
+    margin-top: 16px;
+    font-size: 11px;
+}
+
+.timeline .timeline-container.primary .badge {}
+.timeline .timeline-container .timeline-icon {
+    background-image: url(../img/icon/pahlavi.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.timeline .timeline-container.primary .timeline-icon {
+    background-image: url(../img/icon/safavi.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.timeline .timeline-container.info .badge {}
+
+.timeline .timeline-container.info .timeline-icon {
+    background-image: url(../img/icon/islami.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.timeline .timeline-container.success .badge {}
+
+.timeline .timeline-container.success .timeline-icon {
+    background-image: url(../img/icon/zand.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.timeline .timeline-container.warning .badge {}
+
+.timeline .timeline-container.warning .timeline-icon {
+    background-image: url(../img/icon/ghajar.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.timeline .timeline-container.danger .badge {}
+
+.timeline .timeline-container.danger .timeline-icon {
+    background-image: url(../img/icon/afshari.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.author {
+    font-family: inherit;
+    padding: 3em;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.author a:link,
+.author a:visited {
+    color: black;
+}
+
+.author a:link:hover,
+.author a:visited:hover {
+    text-decoration: none;
+}
+
+.author .btn:link,
+.author .btn:visited {
+    margin-top: 1em;
+    text-decoration: none;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #f0e68c;
+    padding: 1.5em 2rem;
+    border-radius: 1em;
+    transition: 0.5s all;
+}
+
+.author .btn:link:hover,
+.author .btn:link:focus,
+.author .btn:link:active,
+.author .btn:visited:hover,
+.author .btn:visited:focus,
+.author .btn:visited:active {
+    background-color: #ffcd42;
+}

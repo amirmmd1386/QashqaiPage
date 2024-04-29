@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/lang.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/clan.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="asset/css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/swiper-box.css">
+    <title>Qashaia Blog</title>
+    <style>
+
+    </style>
+</head>
+
+<body dir="rtl">
+    <div class="main d-flex flex-column">
+        <header class="d-flex flex-column ">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <img src="asset/img/logo/nav-logo.png" class="navbar-brand" width="100px" alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" id="offcanvasNavbar" style="width: 70%;">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">قشقایی</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#about">درباره ایل</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#khan">تاریخ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#his">خوانین</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#map">سکونت گاه</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#map">فروشگاه</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#map">گالری</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        جنگ ها
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#myModal" onclick="mp(0)">خیزش پارس‌ها</a></li>
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#myModal" onclick="mp(1)">فتح لیدیه</a></li>
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#myModal" onclick="mp(2)">فتح بابل</a></li>
+                                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#myModal" onclick="mp(3)">حمله به سکاها</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        طایفه ها
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">طایفه عمله</a></li>
+                                        <li><a class="dropdown-item" href="#">طایفه دره شوری</a></li>
+                                        <li><a class="dropdown-item" href="#">طایفه شش بلوکی</a></li>
+                                        <li><a class="dropdown-item" href="#">طایفه فارسیمدان</a></li>
+                                        <li><a class="dropdown-item" href="#">طایفه کشکولی بزرگ</a></li>
+                                        <li><a class="dropdown-item" href="#">طایفه کشکولی کوچک</a></li>
+                                        <li><a class="dropdown-item" href="#">طایفه قراچه</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        فرهنگ و هنر
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">صنایع دستی</a></li>
+                                        <li><a class="dropdown-item" href="#">پوشش</a></li>
+                                        <li><a class="dropdown-item" href="#">موسیقی</a></li>
+                                        <li><a class="dropdown-item" href="#">غذا</a></li>
+                                        <li><a class="dropdown-item" href="#">ادبیات</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <a class="navbar-brand nav_text" href="">قشقایی</a>
+
+                </div>
+            </nav>
+            <div class="nav_about ">
+                <div class="swiper headSwiper">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="about container-fluid d-flex justify-content-center p-3 text-white align-items-center gap-4">
+                <div data-aos="fade-right" data-aos-duration="3000"
+                    class="container d-flex justify-content-center  text-white align-items-center gap-4">
+                    <img src="asset/img/bg/aboutPhoto.jpg" width="300px" class="rounded" alt="">
+                    <div>
+                        <p class="fs-1">درباره ایل</p>
+                        <p class="text-black">قشقایی یا ایل قشقایی یکی از اتحادیه‌های ایلی ایران است که مانند بسیاری از
+                            اتحادیه‌های ایلی
+                            متأخر
+                            ایران مخلوطی از قبیله‌هایی با ریشه‌های قومی گوناگون ترک، لر، کرد و عرب است، اما بیشتر
+                            قشقایی‌ها
+                            ریشه‌ای ترک دارند و تقریباً تمامشان به گویشی از زبان‌های ترکی اغوز غربی صحبت می‌کنند که خود
+                            آن
+                            را
+                            ترکی می‌نامند.</p>
+                        <a href="" class="btn btn-warning">بیشتر</a>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f0e68c" fill-opacity="1"
+                    d="M0,32L60,32C120,32,240,32,360,58.7C480,85,600,139,720,138.7C840,139,960,85,1080,80C1200,75,1320,117,1380,138.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="d-flex flex-column align-items-center gap-4 p-3">
+                <p class="gallery-text fs-1 text-center text-white p-1 rounded">گالری قشقایی</p>
+                <div class="gallery d-flex justify-content-center gap-4 flex-wrap wrap">
+                    <img src="asset/img/gallery/img1.jpg" class="img-thumbnail object-fit-cover" width="250px" />
+                    <img src="asset/img/gallery/img2.jpg" class="img-thumbnail object-fit-cover" width="250px" />
+                    <img src="asset/img/gallery/img3.jpeg" class="img-thumbnail object-fit-cover" width="250px" />
+                    <img src="asset/img/gallery/img4.jpg" class="img-thumbnail object-fit-cover" width="250px" />
+                    <img src="asset/img/gallery/img5.jpg" class="img-thumbnail object-fit-cover" width="250px" />
+                    <img src="asset/img/gallery/img6.webp" class="img-thumbnail object-fit-cover" width="250px" />
+                </div>
+                <a href="" class="btn btn-warning btnGallery">بیشتر</a>
+            </div>
+            <div class="rounded d-flex flex-column align-items-center gap-4 p-3">
+                <div id="historic" data-aos="fade-down-left"
+                    class="container d-flex justify-content-center  text-white align-items-center gap-4">
+                    <img src="asset/img/bg/history.gif" width="300px" height="300px" class="rounded object-fit-cover"
+                        alt="">
+                    <div>
+                        <p class="fs-1">تاریخچه قشقایی</p>
+                        <p class="text-black">خاستگاه قشقایی‌ها عموماً بر این باورند که اجدادشان به عنوان قراولان لشکر
+                            هلاکوخان و تیمور از ترکستان به ایران آمده‌اند. در حالی که ورودشان در زمان مهاجرت‌های بزرگ
+                            قبیله‌ای قرن یازدهم میلادی محتمل‌تر است. همه گمانه‌ها در این که ایشان پیش از ورودشان به
+                            فارس، مدتی در شمال غربی ایران حضور داشته‌اند متفق‌اند.</p>
+                        <a href="" class="btn btn-warning">بیشتر</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-4 p-3">
+                <p class="fs-1 text-center text-white p-1 rounded">صنایع دستی</p>
+                <div class="hands d-flex justify-content-center gap-4 flex-wrap wrap">
+
+                </div>
+            </div>
+            <section class="" dir="ltr">
+                <div class="container py-4" data-aos="flip-down" data-aos-duration="3000">
+                    <h1 class="h1 text-center" id="pageHeaderTitle">طایفه ها</h1>
+
+                    <article class="postcard text-black">
+                        <a class="postcard__img_link" href="asset/img/bg/amalehPhoto.jpg">
+                            <img class="postcard__img" src="asset/img/bg/amalehPhoto.jpg" alt="Image Title" />
+                        </a>
+                        <div class="postcard__text">
+                            <h1 class="postcard__title blue">طایفه عمله</h1>
+                            <div class="postcard__subtitle small">
+                                <time datetime="2020-05-25 12:00:00">
+                                    <i class="fas fa-calendar-alt mr-2"></i>قشقایی با اصالت
+                                </time>
+                            </div>
+                            <div class="postcard__bar"></div>
+                            <div class="postcard__preview-txt">طایفه عمله حدود ۱۵۰ سال پیش توسط مرتضی قلی خان قشقایی،
+                                ایل بیگی
+                                قشقایی‌ها، به وجود آمد. بدین ترتیب که از میان ۶۰ هزار خانوار قشقایی، دو هزار خانوار را
+                                که از نظر
+                                مالی بالاتر از دیگران بودند انتخاب کرده و آن‌ها را عمله نامید و از این دو هزار خانوار
+                                ۲۰۰۰ نفر
+                                مسلح، زبده و آماده تدارک دید که گارد جاویدان قشقایی نام داشت.</div>
+                            <ul class="postcard__tagbox">
+                                <li class="tag__item"><i class="fas fa-tag mr-2"></i>توضیح</li>
+                                <li class="tag__item"><i class="fas fa-clock mr-2"></i>وبلاگ</li>
+                                <li class="tag__item play">
+                                    <a href="#"><i class="fas fa-play mr-2"></i>بیشتر</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="cloth rounded d-flex flex-column align-items-center justify-content-center">
+                <p class="h1 text-black p-1 text-center">پوشش قشقایی</p>
+                <div class="swiper clothesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/both1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/both2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon3.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper swiperThum">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/both1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/men3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/both2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/cloth/wemon3.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <p class="h6 mt-2 text-black">برای دریافت اطلاعات از پوشش قشقایی روی بیشتر کلیک کنید</p>
+                <a href="" class="btn btn-warning ">بیشتر</a>
+            </div>
+            <p class="h2 text-center mt-3">غذا های قشقایی</p>
+            <div class="container foodCon d-flex  align-items-center justify-content-center  flex-wrap">
+                <div class="cards d-flex  flex-column">
+                    <div class='imgContainer'>
+                        <img src='asset/img/food/laiPolo.jpg'>
+                    </div>
+                    <div class="content">
+                        <h2>لایی پلو</h2>
+                        <p>لای پلو قشقایی یکی از پلو های بسیار خوشمزه و سنتی ایرنی اصیل می باشد که می توانید به سادگی در
+                            خانه تهیه کنید. شما می توانید برای تهیه این پلو می توانید از قسمت های مختلف گوشت استفاده
+                            کنید و آن راحتی برای تنوع غذایی تهیه کنید.</p>
+                        <a href="" class="btn btn-warning">بیشتر</a>
+                    </div>
+                </div>
+                <div class="cards d-flex  flex-column">
+                    <div class='imgContainer'>
+                        <img src='asset/img/food/bozGhormeh.jpg'>
+                    </div>
+                    <div class="content">
+                        <h2>بوز قرمه</h2>
+                        <p>بوز قورمه یک غذای سنتی ایل قشقایی است که به طور کامل از گروشت گوسفند یا بز (کهره یا بره) پخته
+                            می‌شود. این غذای سنتی در واقه یک غذای اشرافی به حساب می‌آید و در مراسم مهم طبخ می‌گردد.
+                        </p>
+                        <a href="" class="btn btn-warning">بیشتر</a>
+                    </div>
+                </div>
+                <div class="cards d-flex  flex-column">
+                    <div class='imgContainer'>
+                        <img src='asset/img/food/alaSikh.jpg'>
+                    </div>
+                    <div class="content">
+                        <h2>الا سیخ</h2>
+                        <p>این کباب که معمولا گوشت بره و بعضا بزغاله را به صورت کنجه های ریز در می اورند و بر روی زغال
+                            طبخ می کنند و بعد از اینکه گوشتها تا حدودی پختند یه لایه نازک چربی هم بر روی سیخ می کشند</p>
+                        <a href="" class="btn btn-warning">بیشتر</a>
+                    </div>
+                </div>
+            </div>
+            <p class="h1 text-center">زبان قشقایی</p>
+            <div class="wraps animate pop" dir="ltr" data-aos="fade-up" data-aos-duration="2000">
+                <div class="overlay">
+                    <div class="overlay-content animate slide-left delay-2">
+                        <h1 class="animate slide-left pop delay-4 h2">قشقایی</h1>
+                        <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;">قشقایی
+                            <em>دیلی</em>
+                        </p>
+                    </div>
+                    <div class="image-content animate slide delay-5"></div>
+                    <div class="dots animate">
+                        <div class="dot animate slide-up delay-6"></div>
+                        <div class="dot animate slide-up delay-7"></div>
+                        <div class="dot animate slide-up delay-8"></div>
+                    </div>
+                </div>
+                <div class="text text-black" dir="rtl">
+                    <p>
+                        <span class="h4">زبان قشقایی</span>
+                        <br>
+                        زبان قشقایی، زبانی از شاخه اوغوز جنوبی خانواده زبان‌های ترکی است که قشقایی‌ها بدان گفتگو
+                        می‌کنند.[۱] کوالسکی این زبان را نزدیک‌ترین زبان به ترکی خراسانی و ترکی آذربایجانی دانسته‌است.
+                        این موضوع به شکل‌های گوناگون توسط آنه ماری ون‌گابن و گرهارد دوئرفر نیز بیان شده‌است اما کی.اچ.
+                        منگز این زبان را بیشتر به ترکی عثمانی شبیه می‌داند.
+
+                        در قشقایی مصوت‌های i, e, ä, a, å, ï, u, ü, o, ö و صامت‌های p, b, m, f, v, t, d, n, s, z, š, ž,
+                        č, ۳˘, k, g, q, γ, χ, ŋ, l, r, h موجودند. در واژگان قشقایی تأثیر زبان فارسی مشخص است، در متون
+                        جمع‌آوری شده توسط دوئرفر و همکارانش از فیروزآباد دخیل‌های فراوان عربی دیده می‌شود. واژگان حکومتی
+                        و نظامی مانند پاسبان، پیکان و شاه بیشتر از فارسی وارد این زبان شده‌اند. قاموس دینی بیشتر ریشه
+                        عربی دارد اما از فارسی وارد این زبان شده‌اند و ویژگی‌های فارسی‌شان را حفظ کرده‌اند. واژگان پزشکی
+                        نیز تحت تأثیر فارسی است مانند بیمار، درد و دارو.
+                    </p>
+                    <p>
+                        <span class="h4">گویش وران قشقایی</span>
+                        <br>
+                        دانشنامه اتنولوگ در سال ۲۰۱۶ میلادی سخنوران زبان قشقایی را حدود ۹۵۹ هزار نفر تخمین زده است.[۳]
+                        در سال ۱۹۸۶ کتابخانه کنگره سخنوران قشقایی را حدود نیم میلیون نفر برآورد کرده است.[۴] در آخرین
+                        سرشماری جمعیت عشایری سازمان آمار ایران در سال ۱۳۸۷ جمعیت قشقایی‌های کوچرو مستقر در استان‌های
+                        فارس، بوشهر، اصفهان و چهارمحال و بختياري، ۱۱۲ هزار و ۴۳۰ نفر برآورد شده است.[۵]
+
+                        بنا به یک پژوهش، در فیروزآباد افراد قشقایی در همه سنین از زبان مادری در حوزه‌های دوستانه و
+                        خانوادگی استفاده می‌نمایند، اما در شیراز افراد زیر بیست سال خانواده‌های ترک‌زبان تمایل چندانی به
+                        استفاده از زبان مادری ندارند. در شیراز در حوزه‌های مختلف، زبان غالب فارسی است و در موقعیت‌های
+                        غیررسمی در بعضی از مواقع زبان مادری استفاده می‌شود، در صورتی که در فیروزآباد در شرایط مشابه ترکی
+                        ترجیح داده می‌شود. ترکی در شیراز به‌شدت تحت تأثیر فارسی است و زبان قشقایی در میان جوانان به
+                        تدریج در حال از دست دادن کاربری‌اش است
+                    </p>
+                    <p>
+                        <span class="h4">منطقه گویشوران</span>
+                        <br>
+                        ١- استان فارس به عنوان مرکز ایل قشقایی شامل شهرهای: فیروزآباد، شیراز، آباده، اقلید، مرودشت،
+                        خرم‌بید، سپیدان، زرین‌دشت، کوهچنار، کوار، فراشبند، قیر و کارزین، خنج، کازرون، و بخش‌هایی از
+                        ممسنی[۷]، لارستان و لامرد
+                        <br>
+                        ٢- استان چهارمحال و بختیاری شامل شهرهای: شهرکیان، طاقانک، بارده، بن، سامان، هوره، یان چشمه،
+                        سفیددشت، فرادنبه، بلداجی، سودجان، جونقان ، نقنه و هرچگان
+                        <br>
+                        ٣-استان اصفهان شامل شهرهای: زرین شهر، چادگان، سمیرم، دهاقان، فتح‌آباد و شهرضا
+                        <br>
+                        ٤-استان خوزستان:بخشی از هفتکل
+                        <br>
+                        ٥-استان کهگیلویه و بویراحمد.بخشی از گچساران
+                        <br>
+                        ٦-استان بوشهر: بخشی دشتستان، دشتی[۸]
+                        <br>
+                        ٧-استان مرکزی :بخشی شازند
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p class="h3 text-center">آزمون در مورد ایل قشقایی</p>
+                <quiz-box data-aos="zoom-out-down" data-aos-anchor-placement="top-center"
+                    data-aos-duration="3000"></quiz-box>
+            </div>
+            <div class="p-2">
+                <p class="h1 text-center">اطلاعات</p>
+                <div class="container boxNum p-3 mb-3 mt-3 d-flex justify-content-around flex-wrap rounded"
+                    data-aos="zoom-out-down" dir="ltr">
+                    <num-box img="asset/img/icon/icons8-population-64.png" title="جمعیت" num="2,000,000"></num-box>
+                    <num-box img="asset/img/icon/speakers.png" title="سخنوران" num="1,000,000"></num-box>
+                    <num-box img="asset/img/icon/ashayer.png" title="عشایر" num="60,000"></num-box>
+                    <num-box img="asset/img/icon/family.png" title="خانوار" num="400,000"></num-box>
+                </div>
+            </div>
+            <div class="art pb-5">
+                <p class="h1 text-center mb-2">نقاشی ایل قشقایی</p>
+                <div class="swiper swiperBox">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="asset/img/art/img1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/art/img2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/art/img3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="asset/img/art/img4.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </article>
+
+
+        <footer class="d-flex flex-column justify-content-center align-items-center p-2">
+            <img src="asset/img/logo/nav-logo.png" width="100px" alt="">
+            <hr width="80%" style=" border: 1px solid black;">
+            <div class="d-flex justify-content-center flex-wrap text-black gap-3">
+                <p>قشقایی</p>
+                <p>اصالت</p>
+                <p>تاریخ</p>
+                <p>فرهنگ</p>
+                <p>شجاعت</p>
+            </div>
+        </footer>
+
+
+    </div>
+    <script type="module" src="asset/js/api.js"></script>
+    <script type="module" src="asset/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        let swiperBox = new Swiper(".swiperBox", {
+            effect: "cube",
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        let clothThumb = new Swiper(".swiperThum", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        let clothSwiper = new Swiper(".clothesSwiper", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: clothThumb,
+            },
+        });
+        let swiper = new Swiper(".headSwiper", {
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            keyboard: {
+                enabled: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            grabCursor: true,
+        });
+    </script>
+</body>
+
+</html>

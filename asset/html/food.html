@@ -1,0 +1,248 @@
+<html>
+
+<head>
+    <meta name="description" content="CSS Tabs" />
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css"> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'> -->
+    <!-- <link rel="stylesheet" href="../css/gallery.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/food.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>CSS Tabs</title>
+    <meta charset=utf-8>
+    <style>
+        .swiper-button-next,
+        .swiper-button-prev,
+        .swiper {
+            z-index: 1000;
+        }
+
+        #breakFast img {
+            filter: invert(0.30);
+        }
+
+        #breakFastt img:hover {
+            filter: invert(0);
+        }
+    </style>
+</head>
+
+<body dir="rtl" class="">
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="../img/logo/nav-logo.png" class="navbar-brand" width="100px" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvasNavbar" style="width: 70%;">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">قشقایی</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">صفحه اصلی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">درباره ایل</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/his.html">تاریخ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#his">نام آوران</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/geo.html">سکونت گاه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#map">فروشگاه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../html/galley.html">گالری</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    فرهنگ و هنر
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">صنایع دستی</a></li>
+                                    <li><a class="dropdown-item" href="#">پوشش</a></li>
+                                    <li><a class="dropdown-item" href="#">موسیقی</a></li>
+                                    <li><a class="dropdown-item" href="./food.html">خوراک</a></li>
+                                    <li><a class="dropdown-item" href="#">ادبیات</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <a class="navbar-brand nav_text" href="">قشقایی</a>
+            </div>
+        </nav>
+        <!-- Header -->
+        <div class="d-flex justify-content-center flex-column align-items-center mt-5">
+            <h1>خوراک ایل قشقایی</h1>
+            <p>تمام وعده های قشقایی دسته بندی شده</p>
+        </div>
+
+
+        <section id="wrapper" class="mt-5">
+            <div class="content">
+                <!-- Tab links -->
+                <div class="tabs">
+                    <button class="tablinks active" data-country="MainMeals">
+                        <p data-title="وعده اصلی">وعده اصلی</p>
+                    </button>
+                    <button class="tablinks" data-country="breakFast">
+                        <p data-title="صبحانه">صبحانه</p>
+                    </button>
+                    <button class="tablinks" data-country="snack">
+                        <p data-title="میان وعده">میان وعده</p>
+                    </button>
+                    <button class="tablinks" data-country="junk">
+                        <p data-title="تنقلات">تنقلات</p>
+                    </button>
+                </div>
+
+                <!-- Tab content -->
+                <div class="wrapper_tabcontent">
+                    <div id="MainMeals" class="tabcontent active">
+                        <h3>وعده اصلی</h3>
+                        <div class="swiper headSwiper">
+                            <div class="swiper-wrapper">
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                    <div id="breakFast" class="tabcontent">
+                        <h3>صبحانه</h3>
+                        <div
+                            class="container-fluid h-100 text-white  d-flex justify-content-around gap-3 p-2 overflow-x-scroll overflow-y-hidden ">
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/lab.jpeg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">لبنیات</h5>
+                                    <p class="text-white">قشقایی ها دارای تمام لبنیات هایی که از شیر منشاء میگیرد را
+                                        دارد و به دلیل اینکه در طول به دست اوردن این لبنیات ها بسیار مرتب هستند مشتری
+                                        های زیادی نیز داند</p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/birishlik.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">بیر یشلیک</h5>
+                                    <p class="card-text text-white ">این غذای فوق العاده خوشمزه که ترکیبات ان را
+                                        شکر،روغن ترجیحا
+                                        روغن حیوانی یا به قول ترکها (اری یاغ) ،بعضی داروهای محلی که گرم مزاج هستند که
+                                        البته فکر کنم یکیش به صورت عامیانه گرم دارمانی بهش میگویند را تشکیل
+                                        میدهد.بریشلیک را بیشتر خانمهای تازه زایمان کرده جهت تقویت نیروی از دست داده مصرف
+                                        میکنند .البته مصارف غیر از این هم دارد.</p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/oghoz.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">اغوز و بولاما</h5>
+                                    <p class="card-text text-white ">این غذا که بیشتر به عنوان صبحانه میل می شود با
+                                        جوشاندن شیر
+                                        دامهای تازه زا که به خاطر وجود پروتئین بالای این نوع شیر در اثر حرارت منعقد می
+                                        شودو حالت قالب به خود می گیرد، و با خرما صبحانه کامل و مقوی.</p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/sholsholak.png" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">شول شولک</h5>
+                                    <p class="card-text text-white ">خمیر را به در شل ترین حال خود بر روی ساج میکشند و
+                                        زمانی که پخته میشود با روغن طعم دار میشود و حتما باید داغ خورده شود</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="snack" class="tabcontent">
+                        <div
+                            class="container-fluid h-100 text-white  d-flex justify-content-around gap-3 p-2 overflow-x-scroll overflow-y-hidden ">
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/lab.jpeg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">لبنیات</h5>
+                                    <p class="text-white">قشقایی ها دارای تمام لبنیات هایی که از شیر منشاء میگیرد را
+                                        دارد و به دلیل اینکه در طول به دست اوردن این لبنیات ها بسیار مرتب هستند مشتری
+                                        های زیادی نیز داند</p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/birishlik.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">بیر یشلیک</h5>
+                                    <p class="card-text text-white ">این غذای فوق العاده خوشمزه که ترکیبات ان را
+                                        شکر،روغن ترجیحا
+                                        روغن حیوانی یا به قول ترکها (اری یاغ) ،بعضی داروهای محلی که گرم مزاج هستند که
+                                        البته فکر کنم یکیش به صورت عامیانه گرم دارمانی بهش میگویند را تشکیل
+                                        میدهد.بریشلیک را بیشتر خانمهای تازه زایمان کرده جهت تقویت نیروی از دست داده مصرف
+                                        میکنند .البته مصارف غیر از این هم دارد.</p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/oghoz.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">اغوز و بولاما</h5>
+                                    <p class="card-text text-white ">این غذا که بیشتر به عنوان صبحانه میل می شود با
+                                        جوشاندن شیر
+                                        دامهای تازه زا که به خاطر وجود پروتئین بالای این نوع شیر در اثر حرارت منعقد می
+                                        شودو حالت قالب به خود می گیرد، و با خرما صبحانه کامل و مقوی.</p>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white col-12 col-lg-5 h-100 ">
+                                <img src="../img/food/sholsholak.png" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">شول شولک</h5>
+                                    <p class="card-text text-white ">خمیر را به در شل ترین حال خود بر روی ساج میکشند و
+                                        زمانی که پخته میشود با روغن طعم دار میشود و حتما باید داغ خورده شود</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="junk" class="tabcontent">
+                        <h3>تنقلات</h3>
+                        <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area
+                            that
+                            includes the city as well as small towns and villages outside the city. 7 million people
+                            live in
+                            the Community. More than 3 million live in the city itself.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="d-flex flex-column justify-content-center align-items-center p-2 mt-5">
+            <img src="../img/logo/nav-logo.png" width="100px" alt="">
+            <hr width="80%" style=" border: 1px solid black;">
+            <div class="d-flex justify-content-center flex-wrap text-black gap-3">
+                <p>قشقایی</p>
+                <p>اصالت</p>
+                <p>تاریخ</p>
+                <p>فرهنگ</p>
+                <p>شجاعت</p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/food.js"></script>
+</body>
+
+</html>

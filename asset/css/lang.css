@@ -1,0 +1,220 @@
+.wraps h1 {
+    
+    text-align: center;
+    color: white;
+}
+
+.wraps p {
+    font-size: max(10pt, 2.5vmin);
+    line-height: 1.4;
+    color: #0e390e;
+    margin-bottom: 1.5rem;
+}
+
+.wraps {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 85vmin;
+    height: 65vmin;
+    margin: 2rem auto;
+    border: 8px solid;
+    border-image: linear-gradient(-50deg,
+            rgba(222, 162, 77, 1),
+            #f0e68c,
+            #e2d450,
+            rgba(222, 162, 77, 1),
+            rgb(255, 232, 158),
+            #f0e68c,
+            rgba(222, 162, 77, 1)) 1;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    background: #db9d29;
+    transition: 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vmin;
+    height: 100%;
+    padding: 0.5rem 0 0 0.5rem;
+    border: 3px solid;
+    border-image: linear-gradient(to bottom,
+            #fff645 5%,
+            #e2d450 35% 65%,
+            #fff645 95%) 0 0 0 100%;
+    transition: 0.3s ease-in-out 0.2s;
+    z-index: 1;
+}
+
+.image-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60vmin;
+    height: 100%;
+    background-image: url("../img/bg/langBg.jpg");
+
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+    /* border: 1px solid green; */
+}
+
+.inset {
+    max-width: 50%;
+    margin: 0.25em 1em 1em 0;
+    border-radius: 0.25em;
+    float: left;
+}
+
+.dots {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 55px;
+    height: 4vmin;
+    transition: 0.3s ease-in-out 0.3s;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: yellow;
+    border: 1px solid #f0e68c;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out 0.3s;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60vmin;
+    height: 100%;
+    padding: 3vmin 4vmin;
+    background: #fff;
+    box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / 0.4);
+    overflow-y: scroll;
+}
+
+.wraps:hover .overlay {
+    transform: translateX(-60vmin);
+}
+
+.wraps:hover .image-content {
+    width: 30vmin;
+}
+
+.wraps:hover .overlay-content {
+    border: none;
+    transition-delay: 0.2s;
+    transform: translateX(60vmin);
+}
+
+.wraps:hover .dots {
+    transform: translateX(1rem);
+}
+
+.wraps:hover .dots .dot {
+    background: white;
+}
+
+/* Animations and timing delays */
+.animate {
+    animation-duration: 0.7s;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-fill-mode: backwards;
+}
+
+/* Pop In */
+.pop {
+    animation-name: pop;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/* Slide In */
+.slide {
+    animation-name: slide;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translate(4em, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+/* Slide Left */
+.slide-left {
+    animation-name: slide-left;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translate(-40px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.slide-up {
+    animation-name: slide-up;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(3em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .wraps {
+        width: 95%;
+    }
+
+    .wraps:hover .overlay-content {
+        width: 20%;
+    }
+}

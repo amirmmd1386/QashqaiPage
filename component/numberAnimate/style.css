@@ -1,0 +1,30 @@
+@font-face {
+    font-family: tanha;
+    src: url(asset/font/Tanha.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: tanha;
+    color: black;
+}
+
+.card {
+    background-color: #f0e68c;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+h2 {
+    font-family: tanha;
+}
+img{
+   filter: brightness(0);
+}
+

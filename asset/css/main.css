@@ -1,0 +1,301 @@
+@font-face {
+    font-family: tanha;
+    src: url(../font/Tanha.woff);
+}
+
+* {
+    font-family: tanha;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow-x: hidden;
+}
+.boxNum{
+    background-color: #f0e68c;
+}
+.jumbotron {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    border: 1px solid #D6DBDF;
+    margin-top: 10px;
+}
+
+article {
+    background: linear-gradient(180deg, rgba(240, 230, 140, 1) 0%, rgba(222, 162, 77, 1) 100%);
+}
+
+.btnGallery {
+    position: relative;
+    top: -40px;
+}
+
+.gallery-text {
+    width: 80%;
+    background: #f0e68c;
+}
+
+.HandicraftsCard {
+    background-color: #f0e68c;
+}
+
+.HandicraftsCards {
+    width: 18rem;
+}
+
+.gallery {
+    position: relative;
+    width: 80%;
+}
+
+header {
+    height: 500px;
+    width: 100%;
+    background-color: #53513a;
+    background-image: url(../img/bg/carpet.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    border-radius: 5px;
+    width: 90%;
+    background: #f0e68c;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.about {
+    background: linear-gradient(180deg, rgba(222, 162, 77, 1) 0%, rgba(240, 230, 140, 1) 100%);
+}
+
+.main{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nav_about {
+    width: 90%;
+    margin: auto;
+}
+
+.nav_photo {
+    width: 250px;
+    height: 350px;
+    border: 8px solid #f0e68c;
+}
+
+footer{
+    background-color: #f0e68c;
+}
+.nav_photo img {
+    object-fit: cover;
+}
+
+.header-info p {
+    color: #f0e68c;
+    font-size: 80px;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+}
+
+.swiper-button-prev {
+    color: #f0e68c;
+}
+
+.swiper-button-next {
+    color: #f0e68c;
+}
+
+.dropdown ul {
+    background: #f0e68c;
+    color: black;
+}
+
+/* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.clothesSwiper {
+    background: #f0e68c;
+    height: 300px;
+    width: 100%;
+}
+
+.cloth {
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 5px;
+    background: #f0e68c;
+    width: 40%;
+}
+
+.swiperThum {
+    height: 70px;
+    box-sizing: border-box;
+    padding: 5px 0px 0px 0;
+    background: #f0e68c;
+}
+
+.swiperThum .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.swiperThum .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foodCon .cards {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.foodCon {
+    position: relative;
+  height: 500px;
+  
+}
+
+.cards {
+    position: relative;
+}
+
+.foodCon .cards:hover {
+    height: 450px;
+}
+
+.foodCon .cards .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.foodCon .cards .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.foodCon .cards .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.foodCon .cards:hover .imgContainer {
+    left: -10px;
+}
+
+.foodCon .cards:hover .content {
+    display: block;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+    
+    .container .cards .imgContainer {
+        left: -2px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .swiperThum {
+        height: 40px;
+    }
+    .foodCon{
+        height: auto;
+        padding: 15px 0px;
+    }
+    .cloth {
+        width: 95%;
+    }
+
+    .clothesSwiper {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nav_text {
+        display: none;
+    }
+
+    .about div,
+    #historic {
+        flex-direction: column;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    nav {
+        width: 95%;
+    }
+
+    header {
+        height: auto;
+        background-image: url(../img/bg/carpet-rotate.jpg);
+    }
+
+    .nav_about .swiper-slide {
+        flex-direction: column;
+    }
+
+    .header-info p {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "خسروخان",
+        "subAbout":"ایلخان ایل قشقایی و سیاستمدار ملی‌گرای ایرانی بود",
+        "img":"asset/img/person/khosro.jpg"
+    },
+    {
+        "name": "ناصرخان",
+        "subAbout":"یکی از خوانین اصلی ایل قشقایی و نماینده مجلس",
+        "img":"asset/img/person/naser.jpg"
+    },
+    {
+        "name": "سهراب خان",
+        "subAbout":"یکی از خوانین اصلی ایل قشقایی ساکن استان بوشهر ",
+        "img":"asset/img/person/sohrab.jpg"
+    },
+    {
+        "name": "بهمن بیگی",
+        "subAbout":"بنیان‌گذار آموزش و پرورش عشایری در ایران",
+        "img":"asset/img/person/bahman.jpg"
+    },
+    {
+        "name": "صولت الدوله",
+        "subAbout":"ایلخان ایل قشقایی در دوره قاجار و اوائل دوره پهلوی",
+        "img":"asset/img/person/solat.jpg"
+    },
+    {
+        "name": "جهانگیر خان",
+        "subAbout":"مجتهد، فقیه اصولی و فیلسوف شیعه و یکی از استادان برجسته حوزه علمیه اصفهان",
+        "img":"asset/img/person/hakim.jpg"
+    }
+]

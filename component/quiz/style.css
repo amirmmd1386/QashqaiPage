@@ -1,0 +1,107 @@
+@font-face {
+    font-family: tanha;
+    src: url(/asset/font/Tanha.woff2);
+}
+
+* {
+    font-family: tanha;
+    color: black;
+}
+
+.quiz-container {
+    color: black;
+    background-color: #f7f5dd;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #ffde58;
+    border-radius: 5px;
+    border: none;
+    transition: all ease 2s;
+}
+
+button:hover {
+    background-color: #94580a;
+}
+
+.timer-container {
+    background-color: #ffa500;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz-header {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ffa500;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.label_quiz {
+    display: block;
+    background-color: #f7f5dd;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+
+ul li input:checked+label {
+
+    background-color: #ffde58;
+}
+
+.label_quiz:hover {
+    border: 1px solid #ffde58;
+}
+
+#submit {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #f99a21;
+}
+
+@media screen and (max-width: 850px) {
+    .quiz-container {
+        width: 85%;
+
+    }
+}
+
+.label_quiz {
+    color: black;
+}

@@ -1,0 +1,29 @@
+.swiperBox {
+    width: 320px;
+}
+
+.swiperBox .swiper {
+    width: 300px;
+    height: 500px;
+    
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+.swiperBox .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+}
+
+.swiperBox .swiper-slide img {
+    display: block;
+    width: 320px;
+    height: 280px;
+    object-fit: cover;
+    border: 3px solid rgb(228, 157, 4);
+}
+.swiperBox .swiper-pagination{
+    color: brown;
+
+}   
